@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Veyralis Group - Grupo empresarial de tecnologia, inovação e desenvolvimento.">
+
+    <title>Veyralis Group | Inovação e Futuro</title>
+
+    <link rel="stylesheet" href="assets/index.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="container navbar">
+
+            <a href="#inicio" class="logo" onclick="voltarInicio()">
+                VEYRALIS <span>GROUP</span>
+            </a>
+
+            <nav class="menu">
+                <a href="#inicio" onclick="voltarInicio()">Início</a>
+                <a href="#empresas" onclick="voltarInicio()">Empresas</a>
+                <a href="#pagina-sobre" onclick="mostrarPagina('sobre', event)">Sobre nós</a>
+                <a href="#pagina-contato" onclick="mostrarPagina('contato', event)">Contato</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- APRESENTAÇÃO -->
+        <section class="hero" id="inicio">
+            <div class="container hero-content">
+
+                <span class="subtitle">TECNOLOGIA • INOVAÇÃO • FUTURO</span>
+
+                <h1>
+                    Construindo o futuro.<br>
+                    <span>Transformando possibilidades.</span>
+                </h1>
+
+                <p>
+                    A Veyralis Group é um grupo empresarial que reúne
+                    tecnologia, moda, arquitetura, inteligência artificial,
+                    saúde e inovação para desenvolver soluções para o futuro.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#empresas" class="button button-primary" onclick="voltarInicio()">
+                        Conheça nossas empresas
+                    </a>
+
+                    <a href="#pagina-sobre" class="button button-secondary" onclick="mostrarPagina('sobre', event)">
+                        Sobre o grupo
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EMPRESAS -->
+        <section class="companies" id="empresas">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <span class="subtitle">NOSSO ECOSSISTEMA</span>
+
+                    <h2>Nossas empresas</h2>
+
+                    <p>
+                        Diferentes setores, especialidades e tecnologias,
+                        conectados por uma mesma visão de inovação.
+                    </p>
+                </div>
+
+                <!-- GRADE DE EMPRESAS -->
+                <div class="companies-grid">
+
+                    <!-- EMPRESA 1 -->
+                    <article class="company-card">
+                        <div class="company-image fashion">
+                            <img src="imagem/foto1.png" alt="L'ÉCLAT DE LA MODE">
+                        </div>
+
+                        <div class="company-info">
+                            <small>MODA E TECNOLOGIA</small>
+                            <h3>L'ÉCLAT DE LA MODE</h3>
+
+                            <p>
+                                Empresa de moda inteligente que combina
+                                design, tecnologia e inovação para criar
+                                roupas modernas e funcionais.
+                            </p>
+
+                            <a href="#" onclick="mostrarEmpresa('moda', event)">
+                                Conheça a empresa →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- EMPRESA 2 -->
+                    <article class="company-card">
+                        <div class="company-image fabrics">
+                            <img src="imagem/foto8.png" alt="LE PILIER DE LA CREATION">
+                        </div>
+
+                        <div class="company-info">
+                            <small>INDÚSTRIA E MATERIAIS</small>
+                            <h3>LE PILIER DE LA CREATION</h3>
+
+                            <p>
+                                Pesquisa, fabricação e desenvolvimento
+                                de tecidos inteligentes e materiais
+                                tecnológicos.
+                            </p>
+
+                            <a href="#" onclick="mostrarEmpresa('materiais', event)">
+                                Conheça a empresa →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- EMPRESA 3 -->
+                    <article class="company-card">
+                        <div class="company-image architecture">
+                            <img src="imagem/foto7.png" alt="PLAN DE RÊVE">
+                        </div>
+
+                        <div class="company-info">
+                            <small>ARQUITETURA E ENGENHARIA</small>
+                            <h3>plan de rêve</h3>
+
+                            <p>
+                                Projetos de arquitetura e engenharia
+                                modernos, sustentáveis e tecnológicos.
+                            </p>
+
+                            <a href="#" onclick="mostrarEmpresa('arquitetura', event)">
+                                Conheça a empresa →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- EMPRESA 4 -->
+                    <article class="company-card">
+                        <div class="company-image city">
+                            <img src="imagem/foto6.png" alt="VALLÉ ÉTOILLÉE">
+                        </div>
+
+                        <div class="company-info">
+                            <small>CIDADES INTELIGENTES</small>
+                            <h3>Vallé Étoilée</h3>
+
+                            <p>
+                                Planejamento e desenvolvimento de cidades
+                                inteligentes, conectadas e sustentáveis.
+                            </p>
+
+                            <a href="#" onclick="mostrarEmpresa('cidades', event)">
+                                Conheça a empresa →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- EMPRESA 5 -->
+                    <article class="company-card">
+                        <div class="company-image university">
+                            <img src="imagem/foto5.png" alt="LE PAPILLON LÉGER">
+                        </div>
+
+                        <div class="company-info">
+                            <small>EDUCAÇÃO E PESQUISA</small>
+                            <h3>LE PAPILLON LÉGER</h3>
+
+                            <p>
+                                Educação, pesquisa e desenvolvimento
+                                de conhecimento científico e tecnológico.
+                            </p>
+
+                            <a href="#" onclick="mostrarEmpresa('educacao', event)">
+                                Conheça a empresa →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- EMPRESA 6 -->
+                    <article class="company-card">
+                        <div class="company-image cybersecurity">
+                            <img src="imagem/foto4.png" alt="LA DROITURE DU BOUCLIER">
+                        </div>
+
+                        <div class="company-info">
+                            <small>SEGURANÇA DIGITAL</small>
+                            <h3>LA DROITURE DU BOUCLIER</h3>
+
+                            <p>
+                                Proteção digital, segurança da informação
+                                e desenvolvimento de soluções de defesa
+                                cibernética.
+                            </p>
+
+                            <a href="#" onclick="mostrarEmpresa('seguranca', event)">
+                                Conheça a empresa →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- EMPRESA 7 -->
+                    <article class="company-card">
+                        <div class="company-image nexus">
+                            <img src="imagem/foto3.png" alt="NEXUS">
+                        </div>
+
+                        <div class="company-info">
+                            <small>ECOSSISTEMA DIGITAL</small>
+                            <h3>NEXUS</h3>
+
+                            <p>
+                                Tecnologia dedicada a conectar pessoas,
+                                empresas e instituições por meio de
+                                soluções digitais integradas.
+                            </p>
+
+                            <a href="#" onclick="mostrarEmpresa('nexus', event)">
+                                Conheça a empresa →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- EMPRESA 8 -->
+                    <article class="company-card">
+                        <div class="company-image health">
+                            <img src="imagem/foto2.png" alt="LE RAYON DE VIE">
+                        </div>
+
+                        <div class="company-info">
+                            <small>SAÚDE E TECNOLOGIA MÉDICA</small>
+                            <h3>LE RAYON DE VIE</h3>
+
+                            <p>
+                                Tecnologia e serviços de saúde,
+                                hospitais, clínicas, pesquisas médicas
+                                e inovação na área da saúde.
+                            </p>
+
+                            <a href="#" onclick="mostrarEmpresa('saude', event)">
+                                Conheça a empresa →
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section> <!-- FIM DA GRADE DE EMPRESAS -->
+
+
+        <!-- PÁGINA SOBRE NÓS -->
+        <div id="pagina-sobre" class="pagina-interna" style="display: none;">
+            <div class="banner-interno banner-sobre">
+                <span>CONHEÇA NOSSA HISTÓRIA</span>
+                <h1>VEYRALIS GROUP</h1>
+                <p>Uma visão. Muitas possibilidades. Um futuro de inovação.</p>
+            </div>
+
+            <div class="conteudo-interno">
+
+                <span class="categoria">QUEM SOMOS</span>
+                <h2>Construindo o futuro juntos</h2>
+
+                <p>
+                    A Veyralis Group é um grupo empresarial que reúne
+                    diferentes empresas e áreas de atuação em um ecossistema
+                    conectado pela tecnologia, inovação e desenvolvimento.
+                </p>
+
+                <p>
+                    Nossa estrutura integra setores como moda, indústria,
+                    arquitetura, cidades inteligentes, educação, segurança
+                    digital, tecnologia e saúde.
+                </p>
+
+                <h2>Nossa história</h2>
+
+                <p>
+                    A Veyralis Group nasceu de uma visão de construir uma
+                    organização capaz de conectar diferentes conhecimentos,
+                    transformar ideias em projetos e desenvolver soluções
+                    para os desafios do futuro.
+                </p>
+
+                <h2>Nossa visão</h2>
+
+                <p>
+                    Ser um grupo empresarial de referência internacional,
+                    reconhecido pela inovação, excelência e capacidade de
+                    desenvolver soluções que transformem a sociedade.
+                </p>
+
+                <h2>Nossos valores</h2>
+
+                <div class="valores-internos">
+
+                    <article>
+                        <h3>Inovação</h3>
+                        <p>Buscar novas ideias, tecnologias e oportunidades.</p>
+                    </article>
+
+                    <article>
+                        <h3>Excelência</h3>
+                        <p>Desenvolver projetos com qualidade e responsabilidade.</p>
+                    </article>
+
+                    <article>
+                        <h3>Sustentabilidade</h3>
+                        <p>Promover o desenvolvimento consciente e duradouro.</p>
+                    </article>
+
+                    <article>
+                        <h3>Visão global</h3>
+                        <p>Construir soluções com potencial de alcance internacional.</p>
+                    </article>
+
+                </div>
+
+                <h2>Nosso ecossistema</h2>
+
+                <p>
+                    Cada empresa da Veyralis Group possui sua própria
+                    especialidade, mas todas compartilham uma mesma direção:
+                    criar, conectar e transformar possibilidades.
+                </p>
+
+                <button onclick="voltarInicio()" class="botao-voltar">
+                    ← Conhecer nossas empresas
+                </button>
+
+            </div>
+        </div>
+        <!-- FIM SOBRE NÓS -->
+
+
+        <!-- PÁGINA DE CONTATO -->
+        <div id="pagina-contato" class="pagina-interna" style="display: none;">
+
+            <button onclick="voltarInicio()" class="botao-voltar">
+                ← Voltar ao início
+            </button>
+
+            <div class="banner-interno banner-contato">
+                <span>FALE COM A VEYRALIS GROUP</span>
+                <h1>Vamos construir novas possibilidades?</h1>
+                <p>Estamos abertos a novas ideias, projetos e oportunidades.</p>
+            </div>
+
+            <div class="conteudo-interno">
+
+                <span class="categoria">ENTRE EM CONTATO</span>
+                <h2>Como podemos ajudar?</h2>
+
+                <p>
+                    A Veyralis Group acredita que grandes projetos começam
+                    com uma boa conversa. Entre em contato para conhecer
+                    nosso grupo, apresentar uma proposta ou conversar
+                    sobre oportunidades de colaboração.
+                </p>
+
+                <div class="contato-informacoes">
+
+                    <article>
+                        <h3>Atendimento institucional</h3>
+                        <p>
+                            Para dúvidas, informações e assuntos relacionados
+                            à Veyralis Group.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Parcerias e negócios</h3>
+                        <p>
+                            Para empresas, investidores e organizações
+                            interessadas em desenvolver projetos conosco.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Oportunidades profissionais</h3>
+                        <p>
+                            Para profissionais interessados em fazer parte
+                            do nosso ecossistema empresarial.
+                        </p>
+                    </article>
+
+                </div>
+
+                <h2>Envie uma mensagem</h2>
+
+                <form class="form-contato" onsubmit="enviarMensagem(event)">
+
+                    <label for="nome-contato">Nome completo</label>
+                    <input type="text" id="nome-contato" placeholder="Digite seu nome" required>
+
+                    <label for="email-contato">E-mail</label>
+                    <input type="email" id="email-contato" placeholder="Digite seu e-mail" required>
+
+                    <label for="assunto-contato">Assunto</label>
+                    <select id="assunto-contato" required>
+                        <option value="">Selecione um assunto</option>
+                        <option>Informações institucionais</option>
+                        <option>Parcerias e negócios</option>
+                        <option>Oportunidades profissionais</option>
+                        <option>Outros assuntos</option>
+                    </select>
+
+                    <label for="mensagem-contato">Sua mensagem</label>
+                    <textarea id="mensagem-contato" rows="6" placeholder="Escreva sua mensagem..." required></textarea>
+
+                    <button type="submit" class="botao-enviar">
+                        Enviar mensagem →
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+        <!-- FIM CONTATO -->
+
+
+        <!-- PÁGINA DE DETALHES -->
+        <section>
+
+            <div id="detalhes-empresa" class="detalhes-empresa" style="display: none;">
+
+                <button onclick="voltarEmpresas()" class="botao-voltar">
+                    ← Voltar às empresas
+                </button>
+
+                <img id="imagem-detalhe" src="" alt="">
+
+                <div class="conteudo-detalhes">
+
+                    <span id="categoria-detalhe" class="categoria"></span>
+
+                    <h1 id="nome-detalhe"></h1>
+
+                    <p id="descricao-detalhe"></p>
+
+                    <h2>História</h2>
+                    <p id="historia-detalhe"></p>
+
+                    <h2>Sobre a empresa</h2>
+                    <p id="sobre-detalhe"></p>
+
+                    <h2>Atuação</h2>
+                    <div id="funcoes-detalhe" class="valores-internos"></div>
+
+                    <h2>Missão</h2>
+                    <p id="missao-detalhe"></p>
+
+                </div>
+                <!-- FIM DOS DETALHES -->
+
+            </div>
+
+        </section>
+
+
+        <!-- RESUMO SOBRE -->
+        <section class="about" id="sobre-resumo">
+
+            <div class="container about-content">
+
+                <span class="subtitle">QUEM SOMOS</span>
+
+                <h2>Uma visão. Muitas possibilidades.</h2>
+
+                <p>
+                    A Veyralis Group é um grupo empresarial criado
+                    para desenvolver e conectar negócios em diferentes
+                    setores da economia.
+                </p>
+
+                <p>
+                    Nossa atuação combina tecnologia, inovação,
+                    conhecimento e desenvolvimento sustentável,
+                    buscando criar soluções que transformem
+                    a maneira como as pessoas vivem e trabalham.
+                </p>
+
+                <div class="values">
+
+                    <div class="value">
+                        <strong>01</strong>
+                        <span>Inovação</span>
+                    </div>
+
+                    <div class="value">
+                        <strong>02</strong>
+                        <span>Visão global</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- RESUMO CONTATO -->
+        <section class="contact" id="contato-resumo">
+
+            <div class="container">
+
+                <span class="subtitle">FALE CONOSCO</span>
+
+                <h2>O futuro começa com novas ideias.</h2>
+
+                <p>
+                    Conheça nosso grupo empresarial e descubra
+                    as possibilidades de inovação e colaboração.
+                </p>
+
+                <a href="#inicio" class="button button-primary" onclick="voltarInicio()">
+                    Voltar ao início
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <a href="#inicio" class="logo" onclick="voltarInicio()">
+                VEYRALIS <span>GROUP</span>
+            </a>
+
+            <p>
+                Inovação que transforma. Tecnologia que conecta.
+                Futuro que inspira.
+            </p>
+
+            <div class="footer-bottom">
+                <span>© 2026 Veyralis Group. Todos os direitos reservados.</span>
+                <a href="#inicio" onclick="voltarInicio()">Voltar ao topo ↑</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script>
+
+        // INFORMAÇÕES DAS OITO EMPRESAS
+        const empresas = {
+
+            moda: {
+                nome: "L'ÉCLAT DE LA MODE",
+                categoria: "MODA E TECNOLOGIA",
+                imagem: "imagem/foto1.png",
+                descricao: "Moda inteligente que combina design, tecnologia e inovação para criar roupas modernas e funcionais.",
+                historia: "A L'ÉCLAT DE LA MODE nasceu com a proposta de transformar a indústria da moda por meio da criatividade, da tecnologia e de novas experiências.",
+                sobre: "Somos uma empresa dedicada ao desenvolvimento de moda inteligente, roupas tecnológicas, design contemporâneo e soluções que unem estilo e funcionalidade.",
+                funcoes: [
+                    ["Moda inteligente", "Desenvolvimento de roupas com recursos tecnológicos."],
+                    ["Design e criação", "Criação de coleções e produtos de moda."],
+                    ["Tecnologia vestível", "Integração entre vestuário e tecnologia."],
+                    ["Personalização", "Desenvolvimento de soluções de moda personalizadas."]
+                ],
+                missao: "Transformar a experiência da moda por meio da criatividade, tecnologia e inovação."
+            },
+
+            materiais: {
+                nome: "LE PILIER DE LA CREATION",
+                categoria: "INDÚSTRIA E MATERIAIS",
+                imagem: "imagem/foto8.png",
+                descricao: "Pesquisa, fabricação e desenvolvimento de tecidos inteligentes e materiais tecnológicos.",
+                historia: "A LE PILIER DE LA CREATION surgiu com a visão de desenvolver novos materiais e transformar os processos de fabricação industrial.",
+                sobre: "Somos uma empresa voltada à pesquisa, produção e inovação de tecidos, fibras e materiais tecnológicos.",
+                funcoes: [
+                    ["Tecidos inteligentes", "Desenvolvimento de tecidos com funcionalidades especiais."],
+                    ["Pesquisa de materiais", "Estudo e criação de novos materiais."],
+                    ["Produção industrial", "Fabricação e desenvolvimento de produtos."],
+                    ["Inovação sustentável", "Pesquisa de materiais e processos mais sustentáveis."]
+                ],
+                missao: "Criar materiais inovadores que contribuam para a evolução da indústria."
+            },
+
+            arquitetura: {
+                nome: "plan de rêve",
+                categoria: "ARQUITETURA E ENGENHARIA",
+                imagem: "imagem/foto7.png",
+                descricao: "Projetos de arquitetura e engenharia modernos, sustentáveis e tecnológicos.",
+                historia: "A plan de rêve nasceu com o objetivo de transformar ideias em espaços e projetos arquitetônicos que unam beleza, funcionalidade e inovação.",
+                sobre: "Somos uma empresa especializada em arquitetura, engenharia, planejamento de espaços e desenvolvimento de projetos.",
+                funcoes: [
+                    ["Projetos arquitetônicos", "Criação de projetos residenciais e comerciais."],
+                    ["Engenharia", "Desenvolvimento e planejamento de projetos técnicos."],
+                    ["Design de interiores", "Planejamento de ambientes funcionais e modernos."],
+                    ["Arquitetura sustentável", "Soluções para construções mais eficientes."]
+                ],
+                missao: "Transformar sonhos em espaços inovadores, funcionais e sustentáveis."
+            },
+
+            cidades: {
+                nome: "Vallé Étoilée",
+                categoria: "CIDADES INTELIGENTES",
+                imagem: "imagem/foto6.png",
+                descricao: "Planejamento e desenvolvimento de cidades inteligentes, conectadas e sustentáveis.",
+                historia: "A Vallé Étoilée surgiu com a visão de desenvolver cidades preparadas para o futuro, integrando tecnologia, infraestrutura e qualidade de vida.",
+                sobre: "Somos uma empresa dedicada ao planejamento urbano, desenvolvimento de soluções inteligentes e inovação nas cidades.",
+                funcoes: [
+                    ["Planejamento urbano", "Desenvolvimento de projetos para cidades."],
+                    ["Tecnologia urbana", "Integração de tecnologias em espaços urbanos."],
+                    ["Mobilidade inteligente", "Soluções para melhorar o transporte e a mobilidade."],
+                    ["Sustentabilidade", "Desenvolvimento de espaços urbanos sustentáveis."]
+                ],
+                missao: "Construir cidades inteligentes que ofereçam mais qualidade de vida."
+            },
+
+            educacao: {
+                nome: "LE PAPILLON LÉGER",
+                categoria: "EDUCAÇÃO E PESQUISA",
+                imagem: "imagem/foto5.png",
+                descricao: "Educação, pesquisa e desenvolvimento de conhecimento científico e tecnológico.",
+                historia: "A LE PAPILLON LÉGER nasceu com a proposta de ampliar o acesso ao conhecimento e incentivar a pesquisa e a inovação.",
+                sobre: "Somos uma empresa dedicada à educação, formação profissional, pesquisa e desenvolvimento científico e tecnológico.",
+                funcoes: [
+                    ["Educação", "Desenvolvimento de programas de aprendizagem."],
+                    ["Pesquisa científica", "Incentivo à pesquisa e ao conhecimento."],
+                    ["Formação profissional", "Capacitação para diferentes áreas."],
+                    ["Tecnologia educacional", "Desenvolvimento de soluções digitais para educação."]
+                ],
+                missao: "Transformar vidas por meio da educação, pesquisa e conhecimento."
+            },
+
+            seguranca: {
+                nome: "LA DROITURE DU BOUCLIER",
+                categoria: "SEGURANÇA DIGITAL",
+                imagem: "imagem/foto4.png",
+                descricao: "Proteção digital, segurança da informação e desenvolvimento de soluções de defesa cibernética.",
+                historia: "A LA DROITURE DU BOUCLIER nasceu com o propósito de desenvolver soluções avançadas de segurança digital.",
+                sobre: "Somos uma empresa especializada em segurança cibernética, proteção de dados e tecnologias de prevenção de ameaças.",
+                funcoes: [
+                    ["Proteção de dados", "Proteção de informações confidenciais."],
+                    ["Segurança cibernética", "Prevenção de ameaças digitais."],
+                    ["Monitoramento", "Monitoramento de sistemas e redes."],
+                    ["Consultoria", "Orientação em segurança tecnológica."]
+                ],
+                missao: "Construir um ambiente digital mais seguro e confiável."
+            },
+
+            nexus: {
+                nome: "NEXUS",
+                categoria: "ECOSSISTEMA DIGITAL",
+                imagem: "imagem/foto3.png",
+                descricao: "Tecnologia dedicada a conectar pessoas, empresas e instituições por meio de soluções digitais integradas.",
+                historia: "A NEXUS nasceu com a ideia de conectar diferentes serviços e experiências em um único ecossistema digital.",
+                sobre: "Somos uma empresa de tecnologia dedicada à criação de plataformas, sistemas e soluções digitais integradas.",
+                funcoes: [
+                    ["Plataformas digitais", "Desenvolvimento de ambientes digitais integrados."],
+                    ["Conectividade", "Integração entre pessoas, empresas e serviços."],
+                    ["Sistemas inteligentes", "Criação de soluções tecnológicas."],
+                    ["Inovação digital", "Pesquisa e desenvolvimento de novas tecnologias."]
+                ],
+                missao: "Conectar pessoas, empresas e oportunidades por meio da tecnologia."
+            },
+
+            saude: {
+                nome: "LE RAYON DE VIE",
+                categoria: "SAÚDE E TECNOLOGIA MÉDICA",
+                imagem: "imagem/foto2.png",
+                descricao: "Tecnologia e serviços de saúde, hospitais, clínicas, pesquisas médicas e inovação na área da saúde.",
+                historia: "A LE RAYON DE VIE surgiu com a visão de aproximar a tecnologia da saúde e contribuir para a evolução dos serviços médicos.",
+                sobre: "Somos uma empresa dedicada à inovação em saúde, tecnologia médica, pesquisa e desenvolvimento de soluções para o atendimento.",
+                funcoes: [
+                    ["Tecnologia médica", "Desenvolvimento de soluções para a área médica."],
+                    ["Pesquisa em saúde", "Incentivo à pesquisa e inovação científica."],
+                    ["Serviços de saúde", "Soluções tecnológicas para clínicas e hospitais."],
+                    ["Inovação médica", "Desenvolvimento de novas tecnologias para saúde."]
+                ],
+                missao: "Contribuir para uma saúde mais acessível, moderna e tecnológica."
+            }
+
+        };
+
+        const blocosPrincipais = [
+            ".header",
+            "#inicio",
+            ".section-title",
+            ".companies-grid",
+            "#sobre-resumo",
+            "#contato-resumo",
+            ".footer"
+        ];
+
+        const paginasInternas = [
+            "#pagina-sobre",
+            "#pagina-contato",
+            "#detalhes-empresa"
+        ];
+
+        function definirExibicao(seletores, valorDisplay) {
+            seletores.forEach((seletor) => {
+                const elemento = document.querySelector(seletor);
+                if (elemento) {
+                    elemento.style.display = valorDisplay;
+                }
+            });
+        }
+
+        // ABRIR A PÁGINA DA EMPRESA ESCOLHIDA
+        function mostrarEmpresa(id, event) {
+            if (event) event.preventDefault();
+
+            const empresa = empresas[id];
+            if (!empresa) return;
+
+            document.querySelector("#nome-detalhe").textContent = empresa.nome;
+            document.querySelector("#categoria-detalhe").textContent = empresa.categoria;
+            document.querySelector("#imagem-detalhe").src = empresa.imagem;
+            document.querySelector("#imagem-detalhe").alt = empresa.nome;
+            document.querySelector("#descricao-detalhe").textContent = empresa.descricao;
+            document.querySelector("#historia-detalhe").textContent = empresa.historia;
+            document.querySelector("#sobre-detalhe").textContent = empresa.sobre;
+            document.querySelector("#missao-detalhe").textContent = empresa.missao;
+
+            const funcoes = document.querySelector("#funcoes-detalhe");
+            funcoes.innerHTML = "";
+
+            empresa.funcoes.forEach((funcao) => {
+                const cartao = document.createElement("article");
+
+                const titulo = document.createElement("h3");
+                titulo.textContent = funcao[0];
+
+                const descricao = document.createElement("p");
+                descricao.textContent = funcao[1];
+
+                cartao.appendChild(titulo);
+                cartao.appendChild(descricao);
+                funcoes.appendChild(cartao);
+            });
+
+            definirExibicao(blocosPrincipais, "none");
+            definirExibicao(paginasInternas, "none");
+            document.querySelector("#detalhes-empresa").style.display = "block";
+
+            window.scrollTo(0, 0);
+        }
+
+        // VOLTAR PARA A LISTA DE EMPRESAS
+        function voltarEmpresas() {
+            voltarInicio();
+        }
+
+        // ABRIR SOBRE NÓS OU CONTATO
+        function mostrarPagina(pagina, event) {
+            if (event) event.preventDefault();
+
+            const paginaAlvo = document.querySelector(`#pagina-${pagina}`);
+            if (!paginaAlvo) return;
+
+            definirExibicao(blocosPrincipais, "none");
+            definirExibicao(paginasInternas, "none");
+            paginaAlvo.style.display = "block";
+
+            window.scrollTo(0, 0);
+        }
+
+        // VOLTAR PARA A PÁGINA INICIAL
+        function voltarInicio() {
+            definirExibicao(paginasInternas, "none");
+            definirExibicao(blocosPrincipais, "");
+        }
+
+        // ENVIO DO FORMULÁRIO DE CONTATO
+        function enviarMensagem(event) {
+            event.preventDefault();
+            alert("Mensagem enviada com sucesso!");
+            event.target.reset();
+        }
+
+    </script>
+
+</body>
+
+</html>
